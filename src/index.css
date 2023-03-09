@@ -1,0 +1,21 @@
+.mapboxgl-popup {
+  max-width: 200px;
+  height: 20px;
+}
+
+.mapboxgl-popup-content {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+  background-color: rgb(139, 255, 211);
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  /* add borders to popup */
+  border: 1px solid #fff;
+}
+
+.mapboxgl-popup-close-button {
+  display: none;
+}
