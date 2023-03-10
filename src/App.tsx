@@ -3,7 +3,7 @@ import mapboxgl from "mapbox-gl";
 import "./App.css";
 
 mapboxgl.accessToken =
-  "pk.eyJ1IjoibmEwNDk1IiwiYSI6ImNrdG92cG9xdzBnbG4ybnF1bGJicmcwODQifQ.KbNPdaryp-KRrNYEPScQvQ";
+  "pk.eyJ1IjoiZGFuc3dpY2siLCJhIjoiY2l1dTUzcmgxMDJ0djJ0b2VhY2sxNXBiMyJ9.25Qs4HNEkHubd4_Awbd8Og";
 
 function App() {
   const mapContainer: any = useRef(null);
@@ -84,16 +84,16 @@ function App() {
     });
   });
 
-  // animate marker on load
-  useEffect(() => {
-    if (animation) {
-      console.log("animation", animation);
-      // Start the animation.
-      requestAnimationFrame(animateMarker);
-    }
-  }, [marker]);
+  // Todo fix: animate marker on load
+  // useEffect(() => {
+  //   if (animation) {
+  //     console.log("animation", animation);
+  //     // Start the animation.
+  //     requestAnimationFrame(animateMarker);
+  //   }
+  // }, [marker]);
 
-  console.log("animation", animation);
+  // console.log("animation", animation);
   return (
     <div>
       <div className="sidebar">
